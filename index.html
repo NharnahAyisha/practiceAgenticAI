@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VitaBridge | Trusted Health Education</title>
+    <meta name="description" content="VitaBridge offers clear, compassionate health education for everyday wellness and prevention." />
+    <meta property="og:title" content="VitaBridge | Trusted Health Education" />
+    <meta property="og:description" content="A calm, professional health education experience focused on wellness, prevention, and support." />
+    <meta property="og:image" content="images/vita-thumbnail.svg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VitaBridge | Trusted Health Education" />
+    <meta name="twitter:description" content="A calm, professional health education experience focused on wellness, prevention, and support." />
+    <meta name="twitter:image" content="images/vita-thumbnail.svg" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top"><span class="brand-mark">✚</span> VitaBridge</a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#top" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+        <a href="#signup" class="nav-cta">Sign Up</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Trusted health education for everyday life</p>
+          <h1>Feel informed, supported, and prepared.</h1>
+          <p>
+            VitaBridge helps people understand nutrition, preventive care, stress management,
+            and healthy habits in a calm, approachable way.
+          </p>
+          <div class="hero-actions">
+            <a href="#signup" class="btn btn-primary">Create an account</a>
+            <a href="#topics" class="btn btn-secondary">Explore topics</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Key trust points">
+          <img src="images/vita-thumbnail.svg" alt="Illustration of wellness and healthy living" class="hero-thumbnail" />
+          <h2>Why visitors trust VitaBridge</h2>
+          <ul>
+            <li>Clear, evidence-based guidance</li>
+            <li>Practical routines for daily wellness</li>
+            <li>Supportive resources for every stage of life</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="Key benefits" id="about">
+        <article class="card">
+          <h3>Evidence-based</h3>
+          <p>Learn from trustworthy information designed for clarity and confidence.</p>
+        </article>
+        <article class="card">
+          <h3>Easy to follow</h3>
+          <p>Discover simple health ideas you can apply to your routine right away.</p>
+        </article>
+        <article class="card">
+          <h3>Compassionate care</h3>
+          <p>Feel supported by content that respects your wellbeing and personal pace.</p>
+        </article>
+      </section>
+
+      <section class="info-section" id="topics">
+        <h2>Popular Health Topics</h2>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>Nutrition</h3>
+            <p>Simple habits for balanced meals and healthy routines.</p>
+          </article>
+          <article class="card">
+            <h3>Sleep</h3>
+            <p>Tips for rest, recovery, and better daily energy.</p>
+          </article>
+          <article class="card">
+            <h3>Prevention</h3>
+            <p>Practical ways to stay proactive and supported.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="info-section" id="contact">
+        <h2>Contact VitaBridge</h2>
+        <p>Reach out for wellness support, resources, or partnership questions.</p>
+      </section>
+
+      <section class="info-section" id="login">
+        <h2>Member Login</h2>
+        <p>Existing members can sign in and continue exploring helpful content.</p>
+      </section>
+
+      <section class="info-section" id="signup">
+        <h2>Create an Account</h2>
+        <p>Join VitaBridge to receive trusted wellness guidance and updates.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>VitaBridge</h3>
+        <p>Helping people make healthier choices with confidence.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>hello@vitabridge.org</p>
+        <p>+1 (800) 555-0148</p>
+      </div>
+      <p class="copyright">© 2026 VitaBridge. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.site-nav');
+
+      if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+          const isOpen = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+    </script>
+  </body>
+</html>
